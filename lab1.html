@@ -4,25 +4,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Krona+One&family=Manrope:wght@200..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <link href="Style/styles.css" rel="stylesheet" />
   <title>Lab1</title>
 </head>
 <body>
   <header>
-    <nav>...</nav>
+    <nav>
+      <ul>
+        <li><a href="#about" class="nav-btn">About</a></li>
+        <li><a href="#skills" class="nav-btn">Skills</a></li>
+        <li><a href="#contact" class="nav-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <main> 
     <section id="About">
       <h2> About Andie </h2>
-      <img src="/desktop/headshots/thailand.png"
-      style="width:48px;height:48px;">
+      <img src="thailand.png">
+      <p>Hi! I am a fourth-year Cognitive Science major, minoring in Data Science. I am passionate about making things, and am endlessly picking up hobbies that always lead back to making something, whether that be art, writing, or other. I am very excited to learn front-end web development, as I think it will sharpen my ability to design accessible and intuitive products, and build a stronger foundation for my understanding of tech as an industry.</p>
+      <p> Outside of class, you can find me hiking, working out, or finding new places to explore in the Bay Area! </p>
+    </section>
+
+    <section id="Skills">
+      <h2> Skills & Interests</h2>
+      <ul class="skills-list">
+        <li> Languages: Filipino, English, Spanish</li>
+        <li> Skills: Writing, Graphic Design and Visual Arts, Data Analytics </li>
+        <li> Technical/software: Python, R; Adobe Creative Suite, Figma, Procreate </li>
+      </ul>
     </section>
     <section id="Projects">
-      <h2> Projects </h2>
-      <article> </article>
+      <h1 style="font-size:40px;"> Projects </h1>
+        <h4 style="font-size:20px;"> Product Design</h4>
+          <p> I am a consultant for Berkeley Innovation, a human-centered design consultancy in Berkeley. In this role, I have conducted extensive user research through surveys, interviews, ethnographic studies, and more.
+            Alongside my project teams, we have also created high-fidelity prototypes and delivered comprehensive synthesis of the insights derived from our research.
+          </p>
+          <img src="depop_mockup.png" alt="Depop mockup" style="width:400px;height:300px;"
+    </section>
+        <h4 style="font-size:20px;"> Visual Arts </h4>
+          <p> In my free time, I love creating art of different media. I primarily paint with arcylic and watercolor now, but I also love ink prints, colored pencil, graphite, and learning new skills!
+          </p>
+          <img src="Idlip mocked up.png" alt="Art print" style="width:400px;height:300px;"
     </section>
     <section id ='Contact'>
-      <address> </address>
-    </section>
+      <h2> Get In Touch </h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name"> Your Name: </label>
+            <input type="text" id="name" name="name" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="email"> Your Email: </label>
+            <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="subject"> Subject: </label>
+            <input type="text" id="subject" name="subject">
+          </div>
+      
+          <div class="form-group">
+            <label for="message"> Message: </label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+      
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
   </main>
-  <footer> </footer>
+  <footer> 
+    <p> 2025 Andie Benitez, andiebenitez@berkeley.edu </p>
+  </footer>
 </body>
 </html>
